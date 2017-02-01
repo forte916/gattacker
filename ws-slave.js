@@ -211,7 +211,7 @@ function initializeWithoutServices(peripheralId) {
           sendEvent({
              type: 'initializeStatus',
              peripheralId: peripheralId,
-             status: 'connect error' + error
+             status: 'connect error:' + error
           })
 
         } else {
@@ -313,7 +313,7 @@ function initialize(peripheralId, servicesJson, keepConnected) {
           sendEvent({
              type: 'initializeStatus',
              peripheralId: peripheralId,
-             status: 'connect error'
+             status: 'connect error:' + error
           });        
         } else {
           sendEvent({
@@ -336,7 +336,7 @@ function initialize(peripheralId, servicesJson, keepConnected) {
           sendEvent({
              type: 'initializeStatus',
              peripheralId: peripheralId,
-             status: 'connect error'
+             status: 'connect error:' + error
           });        
         } else {
           sendEvent({
@@ -358,7 +358,7 @@ function readRaw(peripheralId, serviceUuid, uuid, callback){
   checkConnected(peripheral, function(){
     peripheral.readHandle(handle, function(error, data){
       if (error) {
-        debug('readHandle error : '.red + error)
+        consloe.log('readHandle error : '.red + error)
       }
       debug('read handle data :' + data.toString('hex'));
 
@@ -386,7 +386,7 @@ function writeRaw(peripheralId, serviceUuid, uuid, data, withoutResponse, callba
   checkConnected(peripheral, function(){
     peripheral.writeHandle(handle, new Buffer(data,'hex'), withoutResponse, function(error){
       if (error) {
-        debug('Write handle error! '. red + error);
+        consloe.log('Write handle error! '. red + error);
       }
       debug('write handle sent ' + peripheralId + ' : ' + serviceUuid + ' : ' + uuid )
       sendEvent({
@@ -422,7 +422,7 @@ function subscribeRaw(peripheralId, serviceUuid, uuid, state, callback) {
   checkConnected(peripheral, function(){
     peripheral.writeHandle(handle, new Buffer(value, 'hex'), false, function(error){
       if (error){
-        debug('Subscribe error '.red + peripheralId + ' : ' + serviceUuid + ' : ' + uuid )
+        console.log('Subscribe error '.red + peripheralId + ' : ' + serviceUuid + ' : ' + uuid )
       }
       sendEvent({
         type: 'notify',

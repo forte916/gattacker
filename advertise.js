@@ -5,7 +5,8 @@ var bleno = require('./lib/bleno');
 var fs = require('fs');
 var util = require('util');
 var utils = require('./lib/utils')
-var hookFunctions = require('./hookFunctions/pos.js');
+//var hookFunctions = require('./hookFunctions/pos.js');
+var hookFunctions = require('./hookFunctions/find.js');
 var path=require('path');
 var events = require('events');
 var getopt = require('node-getopt');
@@ -250,8 +251,12 @@ wsclient.on('notification', function(peripheralId, serviceUuid, uuid, data) {
           hookFunctions[hook.dynamicNotify](peripheralId, serviceUuid, uuid, 'notify', data , wsclient, function(err, modifiedData){
             if (modifiedData) {
               console.log('<< Notify DATA hook                                                             : '.yellow + modifiedData.toString('hex').yellow.inverse + ' (' + utils.hex2a(modifiedData.toString('hex'))+ ')');
-              if (subscriptions[serviceUuid] && subscriptions[serviceUuid][uuid]) {
+              //subscriptions[serviceUuid][uuid](modifiedData);          
+              if (subscriptions[serviceUuid] && subscriptions[serviceUuid][uuid]) { 
                   subscriptions[serviceUuid][uuid](modifiedData);
+                  console.log('    invoke subscriptions callback'.red);
+              } else {
+                console.log('    oops::subscriptions[serviceUuid][uuid] is empty'.red);
               }
             } else {
               console.log('<< Notify DATA hook: '.yellow + 'intercept, not forwarding'.yellow);
@@ -340,7 +345,7 @@ function setServices(services, callback){
 
                     var info = getServiceNames(serviceUuid, uuid);
 
-                    debug('<< Read req : '.green + this.serviceUuid +' -> ' + this.uuid  + ' offset: ' + offset)
+                    console.log('<< Read req : '.green + this.serviceUuid +' -> ' + this.uuid  + ' offset: ' + offset)
 
                     //we assume the original device read success
                     //todo? - forward possible error to client
