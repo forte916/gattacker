@@ -1,0 +1,191 @@
+[
+    {
+        "uuid": "1800",
+        "name": "Generic Access",
+        "type": "org.bluetooth.service.generic_access",
+        "startHandle": 1,
+        "endHandle": 7,
+        "characteristics": [
+            {
+                "uuid": "2a00",
+                "name": "Device Name",
+                "properties": [
+                    "read"
+                ],
+                "value": "4f6e65",
+                "descriptors": [],
+                "startHandle": 2,
+                "valueHandle": 3,
+                "asciiValue": "One"
+            },
+            {
+                "uuid": "2a01",
+                "name": "Appearance",
+                "properties": [
+                    "read"
+                ],
+                "value": "0000",
+                "descriptors": [],
+                "startHandle": 4,
+                "valueHandle": 5,
+                "asciiValue": "  "
+            },
+            {
+                "uuid": "2a04",
+                "name": "Peripheral Preferred Connection Parameters",
+                "properties": [
+                    "read"
+                ],
+                "value": "060006000000c800",
+                "descriptors": [],
+                "startHandle": 6,
+                "valueHandle": 7,
+                "asciiValue": "        "
+            }
+        ]
+    },
+    {
+        "uuid": "1801",
+        "name": "Generic Attribute",
+        "type": "org.bluetooth.service.generic_attribute",
+        "startHandle": 8,
+        "endHandle": 8,
+        "characteristics": []
+    },
+    {
+        "uuid": "adab5c0b6e7d4601bda2bffaa68956ba",
+        "name": null,
+        "type": null,
+        "startHandle": 9,
+        "endHandle": 14,
+        "characteristics": [
+            {
+                "uuid": "adabfb016e7d4601bda2bffaa68956ba",
+                "name": null,
+                "properties": [
+                    "read",
+                    "notify"
+                ],
+                "value": "42",
+                "descriptors": [
+                    {
+                        "handle": 12,
+                        "uuid": "2902",
+                        "value": ""
+                    }
+                ],
+                "startHandle": 10,
+                "valueHandle": 11,
+                "asciiValue": "B"
+            },
+            {
+                "uuid": "adabfb026e7d4601bda2bffaa68956ba",
+                "name": null,
+                "properties": [
+                    "read",
+                    "writeWithoutResponse"
+                ],
+                "value": "00",
+                "descriptors": [],
+                "startHandle": 13,
+                "valueHandle": 14,
+                "asciiValue": " "
+            }
+        ]
+    },
+    {
+        "uuid": "558dfa004fa841059f024eaa93e62980",
+        "name": null,
+        "type": null,
+        "startHandle": 15,
+        "endHandle": 18,
+        "characteristics": [
+            {
+                "uuid": "558dfa014fa841059f024eaa93e62980",
+                "name": null,
+                "properties": [
+                    "read",
+                    "notify"
+                ],
+                "value": "00000000000000000000000000000000",
+                "descriptors": [
+                    {
+                        "handle": 18,
+                        "uuid": "2902",
+                        "value": ""
+                    }
+                ],
+                "startHandle": 16,
+                "valueHandle": 17,
+                "asciiValue": "                "
+            }
+        ]
+    },
+    {
+        "uuid": "180a",
+        "name": "Device Information",
+        "type": "org.bluetooth.service.device_information",
+        "startHandle": 19,
+        "endHandle": 24,
+        "characteristics": [
+            {
+                "uuid": "2a29",
+                "name": "Manufacturer Name String",
+                "properties": [
+                    "read"
+                ],
+                "value": "4669746269740000000000000000000000000000",
+                "descriptors": [
+                    {
+                        "handle": 22,
+                        "uuid": "2904",
+                        "value": ""
+                    }
+                ],
+                "startHandle": 20,
+                "valueHandle": 21,
+                "asciiValue": "Fitbit              "
+            },
+            {
+                "uuid": "5c0b",
+                "name": null,
+                "properties": [
+                    "read"
+                ],
+                "value": "0504",
+                "descriptors": [],
+                "startHandle": 23,
+                "valueHandle": 24,
+                "asciiValue": "  "
+            }
+        ]
+    },
+    {
+        "uuid": "180f",
+        "name": "Battery Service",
+        "type": "org.bluetooth.service.battery_service",
+        "startHandle": 25,
+        "endHandle": 65535,
+        "characteristics": [
+            {
+                "uuid": "2a19",
+                "name": "Battery Level",
+                "properties": [
+                    "read",
+                    "notify"
+                ],
+                "value": "00",
+                "descriptors": [
+                    {
+                        "handle": 28,
+                        "uuid": "2902",
+                        "value": ""
+                    }
+                ],
+                "startHandle": 26,
+                "valueHandle": 27,
+                "asciiValue": " "
+            }
+        ]
+    }
+]

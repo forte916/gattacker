@@ -1,0 +1,13 @@
+{
+    "id": "ac9b0a7c89ed",
+    "eir": "0201051107dfa0fb24c1694158975b2981a5b96a460609512d534c31",
+    "scanResponse": "17ff35022afcba154df0b7d4a9186f8380a0902c01004552",
+    "decodedNonEditable": {
+        "localName": "Q-SL1",
+        "manufacturerDataHex": "35022afcba154df0b7d4a9186f8380a0902c01004552",
+        "manufacturerDataAscii": "5 *   M     o    ,  ER",
+        "serviceUuids": [
+            "466ab9a581295b97584169c124fba0df"
+        ]
+    }
+}

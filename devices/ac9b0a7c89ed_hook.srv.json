@@ -1,0 +1,220 @@
+[
+    {
+        "uuid": "1800",
+        "name": "Generic Access",
+        "type": "org.bluetooth.service.generic_access",
+        "startHandle": 256,
+        "endHandle": 289,
+        "characteristics": [
+            {
+                "uuid": "2a00",
+                "name": "Device Name",
+                "properties": [
+                    "read"
+                ],
+                "value": "512d534c31",
+                "descriptors": [],
+                "startHandle": 272,
+                "valueHandle": 273,
+                "asciiValue": "Q-SL1",
+                "hooks": {
+                    "dynamicRead": "hookDynamicRead"
+                }
+            },
+            {
+                "uuid": "2a01",
+                "name": "Appearance",
+                "properties": [
+                    "read"
+                ],
+                "value": "0002",
+                "descriptors": [],
+                "startHandle": 288,
+                "valueHandle": 289,
+                "asciiValue": "  ",
+                "hooks": {
+                    "dynamicRead": "hookDynamicRead"
+                }
+            }
+        ]
+    },
+    {
+        "uuid": "1801",
+        "name": "Generic Attribute",
+        "type": "org.bluetooth.service.generic_attribute",
+        "startHandle": 512,
+        "endHandle": 512,
+        "characteristics": []
+    },
+    {
+        "uuid": "180a",
+        "name": "Device Information",
+        "type": "org.bluetooth.service.device_information",
+        "startHandle": 768,
+        "endHandle": 817,
+        "characteristics": [
+            {
+                "uuid": "2a29",
+                "name": "Manufacturer Name String",
+                "properties": [
+                    "read"
+                ],
+                "value": "5172696f2c20496e632e",
+                "descriptors": [],
+                "startHandle": 784,
+                "valueHandle": 785,
+                "asciiValue": "Qrio, Inc.",
+                "hooks": {
+                    "dynamicRead": "hookDynamicRead"
+                }
+            },
+            {
+                "uuid": "2a24",
+                "name": "Model Number String",
+                "properties": [
+                    "read"
+                ],
+                "value": "512d534c31",
+                "descriptors": [],
+                "startHandle": 800,
+                "valueHandle": 801,
+                "asciiValue": "Q-SL1",
+                "hooks": {
+                    "dynamicRead": "hookDynamicRead"
+                }
+            },
+            {
+                "uuid": "2a26",
+                "name": "Firmware Revision String",
+                "properties": [
+                    "read"
+                ],
+                "value": "312e322e3030",
+                "descriptors": [],
+                "startHandle": 816,
+                "valueHandle": 817,
+                "asciiValue": "1.2.00",
+                "hooks": {
+                    "dynamicRead": "hookDynamicRead"
+                }
+            }
+        ]
+    },
+    {
+        "uuid": "466ab9a581295b97584169c124fba0df",
+        "name": null,
+        "type": null,
+        "startHandle": 1024,
+        "endHandle": 1122,
+        "characteristics": [
+            {
+                "uuid": "6ad0eefc7279b0a75748e8921f9481ad",
+                "name": null,
+                "properties": [
+                    "writeWithoutResponse",
+                    "extendedProperties"
+                ],
+                "value": "",
+                "descriptors": [
+                    {
+                        "handle": 1042,
+                        "uuid": "2900",
+                        "value": ""
+                    }
+                ],
+                "startHandle": 1040,
+                "valueHandle": 1041,
+                "hooks": {
+                    "dynamicWrite": "hookDynamicWrite",
+                    "dynamicExtendedProperties": "hookDynamicExtendedProperties"
+                }
+            },
+            {
+                "uuid": "cab186346b0f1ab7e047a3dddd6730df",
+                "name": null,
+                "properties": [
+                    "notify"
+                ],
+                "value": "",
+                "descriptors": [
+                    {
+                        "handle": 1072,
+                        "uuid": "2902",
+                        "value": ""
+                    }
+                ],
+                "startHandle": 1056,
+                "valueHandle": 1057,
+                "hooks": {
+                    "dynamicNotify": "hookDynamicNotify"
+                }
+            },
+            {
+                "uuid": "7f93c949ac1d5d92ed4a240625a47ab2",
+                "name": null,
+                "properties": [
+                    "writeWithoutResponse",
+                    "extendedProperties"
+                ],
+                "value": "",
+                "descriptors": [
+                    {
+                        "handle": 1090,
+                        "uuid": "2900",
+                        "value": ""
+                    }
+                ],
+                "startHandle": 1088,
+                "valueHandle": 1089,
+                "hooks": {
+                    "dynamicWrite": "hookDynamicWrite",
+                    "dynamicExtendedProperties": "hookDynamicExtendedProperties"
+                }
+            },
+            {
+                "uuid": "48ecf5db98c2d299534c6258899dfa84",
+                "name": null,
+                "properties": [
+                    "writeWithoutResponse",
+                    "extendedProperties"
+                ],
+                "value": "",
+                "descriptors": [
+                    {
+                        "handle": 1106,
+                        "uuid": "2900",
+                        "value": ""
+                    }
+                ],
+                "startHandle": 1104,
+                "valueHandle": 1105,
+                "hooks": {
+                    "dynamicWrite": "hookDynamicWrite",
+                    "dynamicExtendedProperties": "hookDynamicExtendedProperties"
+                }
+            },
+            {
+                "uuid": "687053a8a2b83087174bb5d3bf8a06b6",
+                "name": null,
+                "properties": [
+                    "writeWithoutResponse",
+                    "extendedProperties"
+                ],
+                "value": "",
+                "descriptors": [
+                    {
+                        "handle": 1122,
+                        "uuid": "2900",
+                        "value": ""
+                    }
+                ],
+                "startHandle": 1120,
+                "valueHandle": 1121,
+                "hooks": {
+                    "dynamicWrite": "hookDynamicWrite",
+                    "dynamicExtendedProperties": "hookDynamicExtendedProperties"
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,15 @@
+{
+    "id": "b4994c3a2823",
+    "eir": "0201060702031802180418",
+    "scanResponse": "120953656e736547697a2d46494e4432323232020a00",
+    "decodedNonEditable": {
+        "localName": "SenseGiz-FIND2222",
+        "manufacturerDataHex": null,
+        "manufacturerDataAscii": null,
+        "serviceUuids": [
+            "1803",
+            "1802",
+            "1804"
+        ]
+    }
+}

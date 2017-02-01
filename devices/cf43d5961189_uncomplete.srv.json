@@ -1,0 +1,50 @@
+[
+    {
+        "uuid": "1800",
+        "name": "Generic Access",
+        "type": "org.bluetooth.service.generic_access",
+        "startHandle": 1,
+        "endHandle": 7,
+        "characteristics": []
+    },
+    {
+        "uuid": "1801",
+        "name": "Generic Attribute",
+        "type": "org.bluetooth.service.generic_attribute",
+        "startHandle": 8,
+        "endHandle": 8,
+        "characteristics": []
+    },
+    {
+        "uuid": "adabfb006e7d4601bda2bffaa68956ba",
+        "name": null,
+        "type": null,
+        "startHandle": 9,
+        "endHandle": 14,
+        "characteristics": []
+    },
+    {
+        "uuid": "558dfa004fa841059f024eaa93e62980",
+        "name": null,
+        "type": null,
+        "startHandle": 15,
+        "endHandle": 18,
+        "characteristics": []
+    },
+    {
+        "uuid": "180a",
+        "name": "Device Information",
+        "type": "org.bluetooth.service.device_information",
+        "startHandle": 19,
+        "endHandle": 24,
+        "characteristics": []
+    },
+    {
+        "uuid": "180f",
+        "name": "Battery Service",
+        "type": "org.bluetooth.service.battery_service",
+        "startHandle": 25,
+        "endHandle": 65535,
+        "characteristics": []
+    }
+]

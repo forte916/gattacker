@@ -1,0 +1,374 @@
+[
+    {
+        "uuid": "1800",
+        "name": "Generic Access",
+        "type": "org.bluetooth.service.generic_access",
+        "startHandle": 1,
+        "endHandle": 11,
+        "characteristics": [
+            {
+                "uuid": "2a00",
+                "name": "Device Name",
+                "properties": [
+                    "read"
+                ],
+                "value": "53656e736547697a2d46494e4439313936",
+                "descriptors": [],
+                "startHandle": 2,
+                "valueHandle": 3,
+                "asciiValue": "SenseGiz-FIND9196"
+            },
+            {
+                "uuid": "2a01",
+                "name": "Appearance",
+                "properties": [
+                    "read"
+                ],
+                "value": "0000",
+                "descriptors": [],
+                "startHandle": 4,
+                "valueHandle": 5,
+                "asciiValue": "  "
+            },
+            {
+                "uuid": "2a02",
+                "name": "Peripheral Privacy Flag",
+                "properties": [
+                    "read",
+                    "write"
+                ],
+                "value": "00",
+                "descriptors": [],
+                "startHandle": 6,
+                "valueHandle": 7,
+                "asciiValue": " "
+            },
+            {
+                "uuid": "2a03",
+                "name": "Reconnection Address",
+                "properties": [
+                    "write"
+                ],
+                "value": "",
+                "descriptors": [],
+                "startHandle": 8,
+                "valueHandle": 9
+            },
+            {
+                "uuid": "2a04",
+                "name": "Peripheral Preferred Connection Parameters",
+                "properties": [
+                    "read"
+                ],
+                "value": "5000a0000000e803",
+                "descriptors": [],
+                "startHandle": 10,
+                "valueHandle": 11,
+                "asciiValue": "P       "
+            }
+        ]
+    },
+    {
+        "uuid": "1801",
+        "name": "Generic Attribute",
+        "type": "org.bluetooth.service.generic_attribute",
+        "startHandle": 12,
+        "endHandle": 15,
+        "characteristics": [
+            {
+                "uuid": "2a05",
+                "name": "Service Changed",
+                "properties": [
+                    "indicate"
+                ],
+                "value": "",
+                "descriptors": [
+                    {
+                        "handle": 15,
+                        "uuid": "2902",
+                        "value": ""
+                    }
+                ],
+                "startHandle": 13,
+                "valueHandle": 14
+            }
+        ]
+    },
+    {
+        "uuid": "180a",
+        "name": "Device Information",
+        "type": "org.bluetooth.service.device_information",
+        "startHandle": 16,
+        "endHandle": 34,
+        "characteristics": [
+            {
+                "uuid": "2a23",
+                "name": "System ID",
+                "properties": [
+                    "read"
+                ],
+                "value": "23283a00004c99b4",
+                "descriptors": [],
+                "startHandle": 17,
+                "valueHandle": 18,
+                "asciiValue": "#(:  L  "
+            },
+            {
+                "uuid": "2a24",
+                "name": "Model Number String",
+                "properties": [
+                    "read"
+                ],
+                "value": "00",
+                "descriptors": [],
+                "startHandle": 19,
+                "valueHandle": 20,
+                "asciiValue": " "
+            },
+            {
+                "uuid": "2a25",
+                "name": "Serial Number String",
+                "properties": [
+                    "read"
+                ],
+                "value": "46696e64203931393600",
+                "descriptors": [],
+                "startHandle": 21,
+                "valueHandle": 22,
+                "asciiValue": "Find 9196 "
+            },
+            {
+                "uuid": "2a26",
+                "name": "Firmware Revision String",
+                "properties": [
+                    "read"
+                ],
+                "value": "312e3000",
+                "descriptors": [],
+                "startHandle": 23,
+                "valueHandle": 24,
+                "asciiValue": "1.0 "
+            },
+            {
+                "uuid": "2a27",
+                "name": "Hardware Revision String",
+                "properties": [
+                    "read"
+                ],
+                "value": "302e3900",
+                "descriptors": [],
+                "startHandle": 25,
+                "valueHandle": 26,
+                "asciiValue": "0.9 "
+            },
+            {
+                "uuid": "2a28",
+                "name": "Software Revision String",
+                "properties": [
+                    "read"
+                ],
+                "value": "312e3000",
+                "descriptors": [],
+                "startHandle": 27,
+                "valueHandle": 28,
+                "asciiValue": "1.0 "
+            },
+            {
+                "uuid": "2a29",
+                "name": "Manufacturer Name String",
+                "properties": [
+                    "read"
+                ],
+                "value": "53656e736547697a00",
+                "descriptors": [],
+                "startHandle": 29,
+                "valueHandle": 30,
+                "asciiValue": "SenseGiz "
+            },
+            {
+                "uuid": "2a2a",
+                "name": "IEEE 11073-20601 Regulatory Certification Data List",
+                "properties": [
+                    "read"
+                ],
+                "value": "fe006578706572696d656e74616c",
+                "descriptors": [],
+                "startHandle": 31,
+                "valueHandle": 32,
+                "asciiValue": "  experimental"
+            },
+            {
+                "uuid": "2a50",
+                "name": "PnP ID",
+                "properties": [
+                    "read"
+                ],
+                "value": "010d0000001001",
+                "descriptors": [],
+                "startHandle": 33,
+                "valueHandle": 34,
+                "asciiValue": "       "
+            }
+        ]
+    },
+    {
+        "uuid": "1803",
+        "name": "Link Loss",
+        "type": "org.bluetooth.service.link_loss",
+        "startHandle": 35,
+        "endHandle": 37,
+        "characteristics": [
+            {
+                "uuid": "2a06",
+                "name": "Alert Level",
+                "properties": [
+                    "read",
+                    "write"
+                ],
+                "value": "00",
+                "descriptors": [],
+                "startHandle": 36,
+                "valueHandle": 37,
+                "asciiValue": " "
+            }
+        ]
+    },
+    {
+        "uuid": "1802",
+        "name": "Immediate Alert",
+        "type": "org.bluetooth.service.immediate_alert",
+        "startHandle": 38,
+        "endHandle": 40,
+        "characteristics": [
+            {
+                "uuid": "2a06",
+                "name": "Alert Level",
+                "properties": [
+                    "writeWithoutResponse"
+                ],
+                "value": "",
+                "descriptors": [],
+                "startHandle": 39,
+                "valueHandle": 40
+            }
+        ]
+    },
+    {
+        "uuid": "1804",
+        "name": "Tx Power",
+        "type": "org.bluetooth.service.tx_power",
+        "startHandle": 41,
+        "endHandle": 44,
+        "characteristics": [
+            {
+                "uuid": "2a07",
+                "name": "Tx Power Level",
+                "properties": [
+                    "read",
+                    "notify"
+                ],
+                "value": "00",
+                "descriptors": [
+                    {
+                        "handle": 44,
+                        "uuid": "2902",
+                        "value": ""
+                    }
+                ],
+                "startHandle": 42,
+                "valueHandle": 43,
+                "asciiValue": " "
+            }
+        ]
+    },
+    {
+        "uuid": "180f",
+        "name": "Battery Service",
+        "type": "org.bluetooth.service.battery_service",
+        "startHandle": 45,
+        "endHandle": 49,
+        "characteristics": [
+            {
+                "uuid": "2a19",
+                "name": "Battery Level",
+                "properties": [
+                    "read",
+                    "notify"
+                ],
+                "value": "10",
+                "descriptors": [
+                    {
+                        "handle": 48,
+                        "uuid": "2902",
+                        "value": ""
+                    },
+                    {
+                        "handle": 49,
+                        "uuid": "2908",
+                        "value": ""
+                    }
+                ],
+                "startHandle": 46,
+                "valueHandle": 47,
+                "asciiValue": " "
+            }
+        ]
+    },
+    {
+        "uuid": "f000ffc004514000b000000000000000",
+        "name": null,
+        "type": null,
+        "startHandle": 50,
+        "endHandle": 65535,
+        "characteristics": [
+            {
+                "uuid": "f000ffc104514000b000000000000000",
+                "name": null,
+                "properties": [
+                    "writeWithoutResponse",
+                    "write",
+                    "notify"
+                ],
+                "value": "",
+                "descriptors": [
+                    {
+                        "handle": 54,
+                        "uuid": "2901",
+                        "value": "Img Identify"
+                    },
+                    {
+                        "handle": 53,
+                        "uuid": "2902",
+                        "value": ""
+                    }
+                ],
+                "startHandle": 51,
+                "valueHandle": 52
+            },
+            {
+                "uuid": "f000ffc204514000b000000000000000",
+                "name": null,
+                "properties": [
+                    "writeWithoutResponse",
+                    "write",
+                    "notify"
+                ],
+                "value": "",
+                "descriptors": [
+                    {
+                        "handle": 58,
+                        "uuid": "2901",
+                        "value": "Img Block"
+                    },
+                    {
+                        "handle": 57,
+                        "uuid": "2902",
+                        "value": ""
+                    }
+                ],
+                "startHandle": 55,
+                "valueHandle": 56
+            }
+        ]
+    }
+]
